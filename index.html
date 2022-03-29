@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dialogue Runner Character Generator</title>
+  <script src="main.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="min-height:100vh;">
+
+  <header class="header"><img class="header__brand" src="/images/notice_l.png" alt="Dialogue Generator Logo">
+    <div>
+      <h1 class="header__title" id="top">Dialogue Runner</h1>
+      <h2 class="header__subtitle" id="top">Character Generator</h2>
+    </div>
+  </header>
+
+  <canvas class="preview-canvas" width="500" height="890" id="preview"></canvas>
+
+  <section class="edit-section">
+    <div id="portraitPanel">
+      <h3>Character (Powered by <a href="https://dlportraits.space/" target="_blank" rel="noreferrer">sh0wer1ee's Portrait
+          Viewer</a>)</h3>
+      <input type="text" autocomplete="off" list="portraitList" id="portraitCharacter">
+      <datalist id="portraitList"></datalist><br>
+
+      <label>Facial Expression</label>
+      <hr>
+      <div class="image-container" id="facialExpression"></div>
+      <label>Mouth Expression</label>
+      <hr>
+      <div class="image-container" id="mouthExpression"></div>
+    </div>
+
+    <div id="backgroundPanel">
+      <h3>Emotions</h3>
+      <p>If no blink/lipflap is needed, keep left frame and right frame the same or leave right frame empty</p>
+      <button class="button" id="addEmotion">+ Add Emotion</button>
+      <button class="button" id="removeEmotion">- Remove Emotion</button>
+      <button class="button" id="download">Download</button>
+
+    </div>
+
+  </section>
+</body>
+
+</html>
