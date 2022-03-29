@@ -402,7 +402,7 @@ repeat` : ""}
       const lbl = document.createElement("label");
       lbl.innerText = frametxt[i];
       const img = document.createElement("img");
-      img.src = "/images/add.png";
+      img.src = "./images/add.png";
       img.addEventListener("click", e => {
         newEmotion.frames[i].face = currentPortraitData.face.replace(PORTRAIT_URL, "");
         newEmotion.frames[i].mouth = currentPortraitData.mouth.replace(PORTRAIT_URL, "");
